@@ -1,0 +1,161 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(26, 21, 21);
+
+}
+.body{
+    background: linear-gradient(rgba(19, 27, 48, 0.6), rgba(20, 27, 46, 0.9)), url(calculator.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.calc{
+    background-image: linear-gradient(to right, rgb(43, 25, 25), rgb(34, 19, 173));
+    margin: 5% auto;
+    width: 35%;
+    height: 500px;
+    border: 2px solid grey;
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 6px;
+    position: relative;
+
+}
+.writetext{
+    width: 90%;
+    height: 70px;
+    border: 2px solid rgb(105, 88, 88);
+    margin-top: 4%;
+    margin-left: 5%;
+    background-color: lightgray;
+    border-radius: 10px;
+    
+
+}
+h2{
+    /* border: 2px solid yellow; */
+    margin-top: 2%;
+    text-align: center;
+    color: rgb(122, 112, 112);
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    
+}
+.half{
+    width: 65%;
+    /* height: 75%; */
+    /* border: 2px solid pink; */
+    /* background-image: linear-gradient(to right, rgba(104, 126, 167, 0.3), rgb(34, 19, 173)); */
+    margin-top: 14px;
+    margin-left: 5%;
+}
+.one{
+    width: 20%;
+    height: 70px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 1px 1px 1px gray;
+
+}
+.two{
+    margin-top: 20px;
+
+}
+.half2{
+    width: 25%;
+    height: 68%;
+    background-image: linear-gradient(to left, rgb(43, 25, 25, 0.3), rgb(34, 19, 173));
+    /* border: 2px solid rgb(55, 173, 144); */
+    position: absolute;
+    top: 29%;
+    right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cancle{
+    width: 45%;
+    height: 65px;
+    /* background-color: black; */
+    border: 2px solid red;
+    box-shadow: 1px 1px 1px rgb(209, 32, 32);
+}
+.cancle > img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    /* border-radius: 35px; */
+}
+.cancle01{
+    width: 45%;
+    height: 65px;
+    margin-left: 5px;
+    box-shadow: 1px 1px 1px gray;
+}
+.cancle01 > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.cancle2{
+    width: 95%;
+    height: 50px;
+    /* border: 2px solid red; */
+    margin-top: -5px;
+    box-shadow: 1px 1px 1px gray;
+}
+.cancle2 > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.cancle3{
+    width: 95%;
+    height: 50px;
+    margin-top: -5px;
+    box-shadow: 1px 1px 1px gray;
+}
+.cancle3 > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.cancle4{
+    width: 95%;
+    height: 50px;
+    margin-top: -5px;
+    box-shadow: 1px 1px 1px gray;
+    /* border: 2px solid red; */
+}
+.cancle4 > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.reset{
+    width: 95%;
+}
+.reset > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}

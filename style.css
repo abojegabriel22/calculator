@@ -35,11 +35,30 @@ body{
     margin-left: 5%;
     background-color: lightgray;
     border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: 35px;
+    color: black;
+    animation: blinks 4s infinite;
     
 
 }
+
+@keyframes blinks{
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 h2{
     /* border: 2px solid yellow; */
+    font-size: 20px;
     margin-top: 2%;
     text-align: center;
     color: rgb(122, 112, 112);
@@ -75,35 +94,24 @@ h2{
     background-image: linear-gradient(to left, rgb(43, 25, 25, 0.3), rgb(34, 19, 173));
     /* border: 2px solid rgb(55, 173, 144); */
     position: absolute;
-    top: 29%;
+    top: 27%;
     right: 5%;
     display: flex;
     flex-wrap: wrap;
 }
-.cancle{
-    width: 45%;
-    height: 65px;
-    /* background-color: black; */
-    border: 2px solid red;
-    box-shadow: 1px 1px 1px rgb(209, 32, 32);
-}
-.cancle > img{
-    width: 100%;
-    height: 100%;
-    /* background-color: black; */
-    /* border-radius: 35px; */
-}
+
 .cancle01{
-    width: 45%;
+    width: 95%;
     height: 65px;
-    margin-left: 5px;
-    box-shadow: 1px 1px 1px gray;
+    /* margin-left: 5px; */
+    
 }
 .cancle01 > input{
     width: 100%;
     height: 100%;
     font-size: 30px;
     font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -113,33 +121,49 @@ h2{
     height: 50px;
     /* border: 2px solid red; */
     margin-top: -5px;
-    box-shadow: 1px 1px 1px gray;
+    
 }
 .cancle2 > input{
     width: 100%;
     height: 100%;
     font-size: 30px;
     font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
     font-family: 'Poppins', sans-serif;
 }
 .cancle3{
     width: 95%;
     height: 50px;
     margin-top: -5px;
-    box-shadow: 1px 1px 1px gray;
+    
 }
 .cancle3 > input{
     width: 100%;
     height: 100%;
     font-size: 30px;
     font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
+    font-family: 'Poppins', sans-serif;
+}
+.cancle5{
+    width: 95%;
+    height: 50px;
+    margin-top: -5px;
+    
+}
+.cancle5 > input{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
     font-family: 'Poppins', sans-serif;
 }
 .cancle4{
     width: 95%;
     height: 50px;
     margin-top: -5px;
-    box-shadow: 1px 1px 1px gray;
+    
     /* border: 2px solid red; */
 }
 .cancle4 > input{
@@ -147,15 +171,162 @@ h2{
     height: 100%;
     font-size: 30px;
     font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
     font-family: 'Poppins', sans-serif;
 }
-.reset{
+.zero{
     width: 95%;
 }
-.reset > input{
+.zero > input{
     width: 100%;
     height: 100%;
     font-size: 30px;
     font-weight: 700;
+    box-shadow: 1px 1px 1px gray;
     font-family: 'Poppins', sans-serif;
+}
+input[type=button]{
+    cursor: pointer;
+}
+input[type=button]:hover{
+    background-color: gray;
+}
+.special{
+    color: rgb(41, 49, 5);
+    animation: blink 5s infinite;
+}
+@keyframes blink{
+    0%{
+        opacity: .3;
+        transform: rotate(5deg);
+        color: rgb(216, 123, 123);
+    }
+    30%{
+        opacity: .8;
+        transform: rotate3d(10deg)
+    }
+    60%{
+        opacity: .8;
+        transform: rotate3d(-5deg)
+    }
+    100%{
+        opacity: 1;
+        transform: rotate3d(5deg)
+    }
+}
+
+@media screen and (max-width: 850px){
+    .calc{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 680px){
+    .calc{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 600px){
+    .half {
+        width: 68%;
+    }
+    .half2 {
+        width: 20%;
+        top: 26%;
+    }
+}
+@media screen and (max-width: 550px){
+    .calc{
+        height: 440px;
+    }
+    .writetext{
+        font-size: 25px;
+    }
+    .one{
+        height: 57px;
+        font-size: 25px;
+        margin-left: 3px;
+    }
+    .half2{
+        top: 29%;
+        width: 24%;
+        height: 66%;
+    }
+    .cancle01 {
+        height: 60px;
+    }
+    .cancle01 > input {
+        font-size: 24px;
+    }
+    .cancle2 > input {
+        font-size: 24px;
+    }
+
+    .cancle3 > input {
+        font-size: 24px;
+    }
+    .cancle5 > input {
+        font-size: 20px;
+    }
+    .cancle4 > input {
+        font-size: 24px;
+    }
+    .zero > input {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 450px){
+    .calc {
+        height: 354px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .half{
+        margin-top: 9px;
+    }
+    .one {
+        height: 46px;
+        font-size: 19px;
+    }
+    .two {
+        margin-top: 12px;
+    }
+    .half2 {
+        top: 32%;
+        height: 63%;
+    }
+    .cancle01 {
+        height: 40px;
+    }
+    .cancle01 > input {
+        font-size: 20px;
+    }
+    .cancle2 {
+        height: 38px;
+    }
+    .cancle2 > input {
+        font-size: 20px;
+    }
+    .cancle3 {
+        height: 38px;
+    }
+    .cancle4 {
+        height: 38px;
+    }
+    .cancle5 {
+        height: 38px;
+    }
+    .cancle5 > input {
+        font-size: 16px;
+    }
+    .zero > input {
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 380px){
+    .calc {
+        width: 85%;
+    }
+
 }
